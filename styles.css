@@ -130,17 +130,14 @@ small {
 }
 
 .half-width {
-	width: 40%;
-	height: 100%;
-	float: left;
 	margin-left: 5%;
 	padding-left: 2%;
 }
 
 .half-width img{
-	width: auto;
+	width: 70%;
 	border-radius: 20px;
-	margin: 20px 0px;
+	margin: 50px auto;
 }
 
 .half-width p{
@@ -188,6 +185,8 @@ small {
 	display: flex;
 	padding: 3%;
 	background-image: url(images/background_article.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 	justify-content: center;
 	align-items: center;
 }
@@ -764,4 +763,19 @@ footer {
 .contact-info li:hover {
 	text-decoration: none;
 	cursor: auto;
+}
+
+@media screen and (max-width:1400px) {
+
+.biography-sec{
+	flex-direction: column;
+}
+.main-nav-list{
+	gap :0.8rem;
+	font-size: 15px;
+}
+.header .solid-btn {
+	display: none;
+}
+
 }
