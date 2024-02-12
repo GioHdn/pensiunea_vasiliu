@@ -590,6 +590,7 @@ small {
 
 /* Style de la barre de défilement */
 .meal-card-body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
 	background-color: #1d4837; /* Couleur de l'ascenseur */
 }
 
@@ -611,7 +612,7 @@ small {
 
 .meal-card-desc {
 	color: #626262;
-	font-size: 1.2rem;
+	font-size: 14px;
 	margin: auto 1rem 1rem 1rem;
 }
 
@@ -862,7 +863,7 @@ img:nth-child(2) {
 }
 
 .carousel-slide {
-	flex: 1 0 20%;
+	flex: 1 0 25%;
 	aspect-ratio: 1;
 	flex-flow: column nowrap;
 	display: flex;
@@ -958,9 +959,8 @@ input#phone, input#name, input#email, textarea#message {
 	.logo{
 		height: 8rem;
 	}
-
 	.carousel-slide {
-		flex: 1 0 90%;
+		flex: 1 0 80%;
 	}
 	.half-width {
 		margin: 0% 0%;
@@ -978,5 +978,17 @@ input#phone, input#name, input#email, textarea#message {
 	.header .solid-btn {
 		display: none;
 	}
-
+	.hero-text-wrapper {
+		margin: 2rem;
+	}
+	.hero-group{
+		gap:2%;
+		margin: 6rem 5% 10rem auto;
+	}
+	.carousel-slide {
+		flex: 1 0 35%;
+	}
+	.half-width{
+		margin: 0% 2%;
+	}
 }

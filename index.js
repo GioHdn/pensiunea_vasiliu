@@ -9,6 +9,34 @@ navButton.addEventListener("click", function () {
 	headerElement.classList.toggle("nav-open");
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+	var links = document.querySelectorAll('.nav-link');
+
+	links.forEach(function(link) {
+		link.addEventListener('click', function(event) {
+			var targetId = this.getAttribute('href');
+
+			// Vérifie si la cible est une section de la même page
+			if (targetId.charAt(0) === '#' && targetId.length > 1) {
+				event.preventDefault(); // Empêche le comportement par défaut du lien
+
+				var targetElement = document.querySelector(targetId); // Sélectionne l'élément cible
+
+				if (targetElement) {
+					var offset = 110; // Ajuste la valeur d'offset selon tes besoins
+					var targetPosition = targetElement.offsetTop - offset; // Calcule la position de la cible
+
+					window.scrollTo({
+						top: targetPosition,
+						behavior: 'smooth' // Permet un défilement fluide
+					});
+				}
+			}
+		});
+	});
+});
+
+
 /* STICKY NAVIGATION */
 const heroElement = document.querySelector(".section-hero");
 const navObserver = new IntersectionObserver(
