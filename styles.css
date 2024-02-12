@@ -957,6 +957,9 @@ input#phone, input#name, input#email, textarea#message {
 }
 
 @media (max-width: 600px) {
+	.meal-card-body{
+		max-height: 1080px;;
+	}
 	.logo{
 		height: 8rem;
 	}
