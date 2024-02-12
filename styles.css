@@ -858,6 +858,9 @@ img:nth-child(2) {
 	.carousel-slide {
 		flex: 1 0 90%;
 	}
+	.half-width {
+		margin: 0% 0%;
+	}
 }
 @media screen and (max-width:1400px) {
 
