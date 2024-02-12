@@ -72,11 +72,11 @@
 				<a href="decouverte.html" class="nav-link">Découverte</a>
 			</li>
 		</ul>
-		<a href="" class="btn solid-btn mobile-order nav-link"
+		<a href="#contact" class="btn solid-btn mobile-order nav-link"
 		><i class="fa-regular fa-calendar-check"></i>Contact</a
 		>
 	</nav>
-	<a href="" class="btn solid-btn desktop-order nav-link"
+	<a href="#contact" class="btn solid-btn desktop-order nav-link"
 	><i class="fa-solid fa-address-book"></i>   Contact</a
 	>
 
@@ -121,8 +121,8 @@
 				</div>
 			</div>
 			<div class="hero-img-wrapper">
-				<img src="images/pensiunea_bedroom.jpg" alt="" class="pic">
-				<img src="images/pensiunea_photo.png" alt="" class="pic">
+				<img src="images/pension10.jpg" alt="" class="pic">
+				<img src="images/pension1.jpg" alt="" class="pic">
 			</div>
 		</div>
 		</div>
@@ -298,6 +298,43 @@
 				</p>
 			</div>
 		</div>
+	</section>
+	<section class="background-contact" id="contact">
+	<section class="img-contact">
+	</section>
+	<section class ="contact">
+		<h1>Contactez-nous !</h1>
+		<div class="m-7">
+			<form action="https://api.web3forms.com/submit" method="POST" id="form">
+				<input type="hidden" name="access_key" value="ea856c34-5af4-4649-b117-19929757bfeb" />
+				<input type="hidden" name="subject" value="New Submission from Web3Forms" />
+				<input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+				<div class="mb-6">
+					<label for="name">Nom de contact</label>
+					<input type="text" name="name" id="name" placeholder="John Doe" required/>
+				</div>
+				<div class="mb-6">
+					<label for="email">Adresse mail</label>
+					<input type="email" name="email" id="email" placeholder="example@example.com" required/>
+				</div>
+				<div class="mb-6">
+					<label for="phone">Numéro de téléphone</label>
+					<input type="text" name="phone" id="phone" placeholder="+33 6" required/>
+				</div>
+				<div class="mb-6">
+					<label for="message">Votre message</label>
+					<textarea rows="5" name="message" id="message" placeholder="Votre message" required></textarea>
+				</div>
+				<div class="mb-6-submit">
+					<button type="submit" class="submit-mail">
+						<a>Envoyer le message</a>
+					</button>
+				</div>
+				<p class="text-base text-center text-gray-400" id="result"></p>
+			</form>
+		</div>
+	</section>
 	</section>
 </main>
 <footer>

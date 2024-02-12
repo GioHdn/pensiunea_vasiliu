@@ -41,37 +41,48 @@ const scrollObserver = new IntersectionObserver((entries) => {
 	});
 });
 
-appShots.forEach((el) => scrollObserver.observe(el));
+const form = document.getElementById("form");
+const result = document.getElementById("result");
 
-/* PRICING TOGGLE */
-const pricing = document.querySelectorAll(".pricing-num");
-const toggleButton = document.querySelector("#toggle");
+form.addEventListener("submit", function (e) {
+	const formData = new FormData(form);
+	e.preventDefault();
+	var object = {};
+	formData.forEach((value, key) => {
+		object[key] = value;
+	});
+	var json = JSON.stringify(object);
+	result.innerHTML = "Please wait...";
 
-function togglePricing() {
-	const prices = toggleButton.checked
-		? ["3995", "6995", "9995"]
-		: ["395", "645", "999"];
-	for (let i = 0; i < pricing.length; i++) {
-		pricing[i].textContent = prices[i];
-	}
-}
-
-toggleButton.addEventListener("click", togglePricing);
-
-/* FORM FUNCTIONALITY */
-function submission(event) {
-	event.preventDefault();
-	let name = document.querySelector("#user-name").value;
-	let planChoice = document.querySelector("#user-plan").value;
-	let message = document.querySelector(".submission");
-	if (planChoice !== "") {
-		message.style.display = "block";
-		message.textContent = `Thank you for your interest in the ${planChoice} plan, ${name}. Unfortunately, Omnifood is a fictional company so there's no free meal to send you.`;
-	} else {
-		message.style.display = "block";
-		message.textContent = `Sorry, you need to choose a plan to proceed!`;
-	}
-}
-
-const subscribeForm = document.querySelector("#form-subscribe-element");
-subscribeForm.addEventListener("submit", submission);
+	fetch("https://api.web3forms.com/submit", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+			Accept: "application/json"
+		},
+		body: json
+	})
+		.then(async (response) => {
+			let json = await response.json();
+			if (response.status == 200) {
+				result.innerHTML = json.message;
+				result.classList.remove("text-gray-500");
+				result.classList.add("text-green-500");
+			} else {
+				console.log(response);
+				result.innerHTML = json.message;
+				result.classList.remove("text-gray-500");
+				result.classList.add("text-red-500");
+			}
+		})
+		.catch((error) => {
+			console.log(error);
+			result.innerHTML = "Something went wrong!";
+		})
+		.then(function () {
+			form.reset();
+			setTimeout(() => {
+				result.style.display = "none";
+			}, 5000);
+		});
+});
