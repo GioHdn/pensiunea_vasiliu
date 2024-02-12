@@ -947,6 +947,7 @@ button.submit-mail:hover {
 }
 
 input#phone, input#name, input#email, textarea#message {
+	margin-top: 10px;
 	padding: 10px;
 	border: 1px solid black;
 	border-radius: 10px;

@@ -303,7 +303,7 @@
 	<section class="img-contact">
 	</section>
 	<section class ="contact">
-		<h1>Contactez-nous !</h1>
+		<h1>Contactez-nous ! <i class="fa-solid fa-hand-holding-heart"></i></h1>
 		<div class="m-7">
 			<form action="https://api.web3forms.com/submit" method="POST" id="form">
 				<input type="hidden" name="access_key" value="ea856c34-5af4-4649-b117-19929757bfeb" />
@@ -311,24 +311,24 @@
 				<input type="checkbox" name="botcheck" id="" style="display: none;" />
 
 				<div class="mb-6">
-					<label for="name">Nom de contact</label>
+					<label for="name"><i class="fa-regular fa-address-book"></i> - Nom de contact</label>
 					<input type="text" name="name" id="name" placeholder="John Doe" required/>
 				</div>
 				<div class="mb-6">
-					<label for="email">Adresse mail</label>
+					<label for="email"><i class="fa-regular fa-envelope"></i> - Adresse mail</label>
 					<input type="email" name="email" id="email" placeholder="example@example.com" required/>
 				</div>
 				<div class="mb-6">
-					<label for="phone">Numéro de téléphone</label>
-					<input type="text" name="phone" id="phone" placeholder="+33 6" required/>
+					<label for="phone"><i class="fa-solid fa-phone"></i> - Numéro de téléphone</label>
+					<input type="text" name="phone" id="phone" placeholder="" required/>
 				</div>
 				<div class="mb-6">
-					<label for="message">Votre message</label>
+					<label for="message"><i class="fa-regular fa-message"></i> - Votre message</label>
 					<textarea rows="5" name="message" id="message" placeholder="Votre message" required></textarea>
 				</div>
 				<div class="mb-6-submit">
 					<button type="submit" class="submit-mail">
-						<a>Envoyer le message</a>
+						<a>Envoyer <i class="fa-solid fa-paper-plane"></i></a>
 					</button>
 				</div>
 				<p class="text-base text-center text-gray-400" id="result"></p>
