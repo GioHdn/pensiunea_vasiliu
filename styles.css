@@ -966,8 +966,11 @@ input#phone, input#name, input#email, textarea#message {
 	.half-width {
 		margin: 0% 0%;
 	}
+	.section-member-info {
+		padding: 1rem;
+	}
 }
-@media screen and (max-width:1400px) {
+@media only screen and (max-width: 1400px) and (min-width: 600px){
 
 	.biography-sec{
 		flex-direction: column;
