@@ -932,6 +932,7 @@ section.contact h1{
 }
 
 button.submit-mail {
+	background: white;
 	color: #001F21;
 	font-weight: bold;
 	margin: 3% auto;
