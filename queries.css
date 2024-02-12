@@ -472,7 +472,8 @@
 	}
 
 	.meal-stats {
-		font-size: 2rem;
+		font-size: 13px;
+		padding: 0px;
 	}
 
 	.meal-types-overview br {

@@ -577,7 +577,7 @@ small {
 }
 
 .meal-card-body {
-	max-height: 500px;
+	max-height: 480px;
 	padding: 2rem 0.6rem;
 	overflow-y: auto;
 }
@@ -644,15 +644,15 @@ small {
 	font-size: 14px;
 	display: inline-block;
 	padding: 0.8rem 2rem;
-	border: 2px solid #17640b;
+	border: 2px solid #1d4837;
 	border-radius: 50px;
 	text-decoration: none;
-	color: #17640b;
+	color: #1d4837;
 	transition: all 0.3s ease-in-out;
 }
 
 .offre-buttons a:hover {
-	background-color: #17640b;
+	background-color: #1d4837;
 	color: #fff;
 }
 
