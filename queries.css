@@ -285,15 +285,29 @@
 }
 
 @media only screen and (max-width: 48em) {
+
 	/* HERO */
 	.hero-group {
+		display: flex;
+		margin: 0px;
 		grid-template-columns: 1fr;
-		gap: 0;
+		gap: 40px;
+		flex-wrap: wrap;
+	}
+
+	.section-hero {
+		background: white;
+		padding: 0rem 0;
 	}
 
 	.hero-text-wrapper {
 		justify-self: center;
 		align-self: center;
+	}
+
+	.hero-img-wrapper > img {
+		max-width: 74%;
+		margin-left: 13%;
 	}
 
 	.hero-marquee,
@@ -313,7 +327,8 @@
 	}
 
 	.hero-img-wrapper {
-		display: none;
+		min-height: 350px;
+		display: block;
 	}
 
 	.mobile-hero-img img {
