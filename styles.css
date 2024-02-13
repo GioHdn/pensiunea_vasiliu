@@ -130,8 +130,21 @@ small {
 }
 
 .half-width {
+	border-radius: 10px;
+	border: 15px;
+	background-color: rgba(250,250,250);
+	box-shadow: 15px 15px 15px 15px #b5d0ba;
 	margin: 0% 15%;
+	transition: all 200ms ease-in;
 }
+
+.half-width:hover {
+	cursor: pointer;
+	background-color: rgb(255, 255, 255);
+	transform: scale(1.02);
+	box-shadow: 20px 20px 20px 20px #b5d0ba;
+}
+
 
 .half-width img{
 	width: 70%;
@@ -139,22 +152,24 @@ small {
 	margin: 50px auto;
 }
 
-.half-width p{
-	color: #fbfffa;
-	background-color: rgba(0, 0, 0, 0.5);
+.half-width p {
+	text-align: justify;
+	color: rgb(42 105 76);
+	line-height: 28px;
 	padding: 2% 2%;
 	border-radius: 10px;
 	margin: 20px 4%;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .half-width h1{
+	margin : 0px 15%;
 	text-align: center;
-	color: white;
+	color: rgb(42 105 76);
 	padding: 15px 0px;
 	font-size: 30px;
 	font-weight: bold;
-	border-bottom: 1px solid white;
+	border-bottom: 5px solid rgb(42 105 76);
 }
 
 .half-width h2{
@@ -164,6 +179,25 @@ small {
 	border-bottom: 2px solid #FFFFFF;
 	font-size: 20px;
 	font-weight: bold;
+}
+
+.content-page-title {
+	border-radius: 10px;
+	background-position: center;
+	background-image: url(images/pension1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 225px;
+}
+
+.content-page-title h1 {
+	margin: 0;
+	line-height: 200px;
+	border-radius: 11px;
+	background-color: #0000004a;
+	font-size: 57px;
+	border-bottom: #2b7612;
+	color: white;
 }
 
 .half-width h3{
@@ -184,10 +218,8 @@ small {
 .biography-sec {
 	height: 100%;
 	display: flex;
-	padding: 3%;
-	background-image: url(images/background_article.png);
-	background-size: cover;
-	background-repeat: no-repeat;
+	padding: 8%;
+	background: linear-gradient(180deg, rgb(235 255 239) 0%, rgba(149, 204, 126, 0) 100%);
 	justify-content: center;
 	align-items: center;
 }
@@ -483,7 +515,7 @@ small {
 
 /* HOW IT WORKS SECTION: APP SCREENSHOTS */
 .mobile-bg {
-	background: linear-gradient(180deg, #95cc7e 0%, rgba(149, 204, 126, 0) 100%);
+	background: linear-gradient(180deg, rgb(235 255 239) 0%, rgba(149, 204, 126, 0) 100%);
 	border-radius: 20px;
 	padding: 4rem;
 	height: 36rem;
@@ -547,7 +579,7 @@ small {
 /* MEALS SECTION */
 .section-meals {
 	background: linear-gradient(180deg,
-	rgb(223 255 223),
+	rgb(235 255 239),
 	rgba(255, 255, 255)
 	);
 	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2);
@@ -899,7 +931,7 @@ section.img-contact:hover{
 }
 
 section.contact {
-	background: linear-gradient(180deg, rgb(243 255 243), rgba(255, 255, 255) );
+	background: linear-gradient(180deg, rgb(235 255 239), rgba(255, 255, 255) );
 	border: 6px solid #447664;
 	border-radius: 30px;
 	max-width: 500px;
@@ -963,12 +995,22 @@ input#phone, input#name, input#email, textarea#message {
 		flex: 1 0 80%;
 	}
 	.half-width {
-		margin: 0% 0%;
+		margin: 100px 0% 8% 0%;
 	}
 	.section-member-info {
 		padding: 1rem;
 	}
+	.half-width h1 {
+		font-size: 20px;
+	}
+	.half-width p {
+		font-size: 15px;
+	}
+	.biography-sec{
+		padding: 4%;
+	}
 }
+
 @media only screen and (max-width: 1400px) and (min-width: 600px){
 
 	.biography-sec{
@@ -993,5 +1035,10 @@ input#phone, input#name, input#email, textarea#message {
 	}
 	.half-width{
 		margin: 0% 2%;
+	}
+}
+@media only screen and (min-width: 600px){
+	.main-nav-list {
+		font-size: 18px;
 	}
 }
