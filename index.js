@@ -36,6 +36,36 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 });
 
+const totalSlides = document.querySelectorAll('.carousel-slide').length;
+const slidesPerGroup = 3;
+
+document.querySelectorAll('.indicator').forEach((indicator, index) => {
+	indicator.addEventListener('click', function() {
+		// Calculer l'ID de la première slide du groupe correspondant
+		var groupIndex = index * slidesPerGroup + 1;
+		var slideId = 'slide' + groupIndex;
+		var slideElement = document.getElementById(slideId);
+
+		if (slideElement) {
+			// Défiler vers le slide correspondant
+			slideElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+
+			// Mettre à jour les indicateurs actifs
+			updateActiveIndicator(index);
+		}
+	});
+});
+
+function updateActiveIndicator(activeIndex) {
+	document.querySelectorAll('.indicator').forEach((ind, index) => {
+		if (index === activeIndex) {
+			ind.classList.add('active');
+		} else {
+			ind.classList.remove('active');
+		}
+	});
+}
+
 
 /* STICKY NAVIGATION */
 const heroElement = document.querySelector(".section-hero");

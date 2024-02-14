@@ -867,7 +867,7 @@ img:nth-child(2) {
 .carousel-container {
 	width: 100%;
 	padding-block: 16px 32px;
-	overflow-x: auto;
+	overflow: hidden; /* Masque la scrollbar */
 	display: flex;
 	width: 100%;
 	gap: 2%;
@@ -877,31 +877,14 @@ img:nth-child(2) {
 	scroll-behavior: smooth;
 }
 
-.carousel-container::-webkit-scrollbar {
-	height: 14px;
-	width: calc(100% - 48px);
-}
-
-.carousel-container::-webkit-scrollbar-track {
-	background: #b1b3b399;
-}
-
-.carousel-container::-webkit-scrollbar-thumb {
-	background: #1d4837;
-}
-
-.carousel-container::-webkit-scrollbar-track-piece:start {
-	background: #b1b3b399;
-}
-
 .carousel-slide {
-	flex: 1 0 25%;
+	flex: 1 0 31%;
 	aspect-ratio: 1;
 	flex-flow: column nowrap;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #204f39;
+	background-color: white;
 	scroll-snap-align: center;
 }
 
@@ -909,6 +892,28 @@ img:nth-child(2) {
 	max-height: 100%;
 	max-width: 100%;
 }
+
+.carousel-indicators {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.indicator {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 2px solid grey;
+	border-radius: 50%;
+	background-color: #333;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.indicator.active {
+	border: 2px solid grey;
+	background-color: #fff;
+}
+
 
 section.background-contact {
 	display: flex;
@@ -1016,6 +1021,29 @@ input#phone, input#name, input#email, textarea#message {
 	span.excursion-content {
 		display: none;
 	}
+	.carousel-container {
+		overflow-x: auto;
+	}
+
+	.carousel-container::-webkit-scrollbar {
+		height: 14px;
+		width: calc(100% - 48px);
+	}
+
+	.carousel-container::-webkit-scrollbar-track {
+		background: #b1b3b399;
+	}
+
+	.carousel-container::-webkit-scrollbar-thumb {
+		background: #1d4837;
+	}
+
+	.carousel-container::-webkit-scrollbar-track-piece:start {
+		background: #b1b3b399;
+	}
+	.indicator{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 600px){
@@ -1038,7 +1066,7 @@ input#phone, input#name, input#email, textarea#message {
 		margin: 6rem 5% 10rem auto;
 	}
 	.carousel-slide {
-		flex: 1 0 35%;
+		flex: 1 0 31%;
 	}
 	.half-width{
 		margin: 0% 2%;
