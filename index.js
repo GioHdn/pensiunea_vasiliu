@@ -66,6 +66,26 @@ function updateActiveIndicator(activeIndex) {
 	});
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+	var popup = document.getElementById("popupInfo");
+	var btn = document.querySelector(".en-savoir-plus-btn");
+	var span = document.getElementsByClassName("close-btn")[0];
+
+	btn.onclick = function() {
+		popup.style.display = "block";
+	}
+
+	span.onclick = function() {
+		popup.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+		if (event.target == popup) {
+			popup.style.display = "none";
+		}
+	}
+});
+
 
 /* STICKY NAVIGATION */
 const heroElement = document.querySelector(".section-hero");
