@@ -116,7 +116,7 @@
 
 	.main-nav {
 		position: absolute;
-		background: #92ba80e6;
+		background: rgb(153 255 190 / 83%);;
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
 		top: 0;
@@ -503,19 +503,6 @@
 	/* SUBSCRIBE */
 	.subscribe-box label {
 		font-size: 1.4rem;
-	}
-
-	/* FOOTER */
-	footer {
-		padding: 3rem;
-	}
-
-	.section-footer {
-		grid-template-columns: auto;
-	}
-
-	.footer-nav {
-		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
