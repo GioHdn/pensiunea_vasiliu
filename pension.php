@@ -135,36 +135,7 @@
     </div>
   </section>
 </main>
-<footer>
-  <div class="section-footer">
-    <div class="footer-info">
-      <p class="footer-info-desc">
-        Découvrez la tranquillité du village de Crișan au cœur du delta du Danube.
-        Notre pension offre une expérience unique d'écotourisme, de découverte ornithologique, de photographie animalière, et bien plus encore.
-        Immergez-vous dans la nature préservée et contactez-nous pour une expérience inoubliable
-      </p>
-    </div>
-    <nav class="footer-nav">
-      <div class="contact-info">
-        <ul class="footer-links">
-          <li><a
-                  href="mailto:hello@aniqa.io"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="social-link"
-                  aria-label="email"
-          >Contact</a></li>
-          <li>
-            Pension Vasiliu<br>
-            422 strada principale
-          </li>
-          <li>CAROLINE VASILIU :<br>004 07 44 76 13 23</li>
-          <li>PETRE VASILIU :<br>004 07 44 95 71 48<br>petrerot@yahoo.com</li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</footer>
+<?php include 'footer.php'; ?>
 <script defer src="index.js"></script>
 </body>
 </html>

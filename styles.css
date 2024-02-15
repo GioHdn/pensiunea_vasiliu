@@ -78,8 +78,8 @@ small {
 }
 
 .main-nav-list a:hover {
-	background: #c4e8b4;
-	color: #2b7f06;
+	background: rgba(140, 195, 146, 0.68);
+	color: #053824;
 }
 
 .header .solid-btn {
@@ -779,8 +779,8 @@ footer {
 .section-footer {
 	display: flex;
 	margin: 0 auto;
-	gap: 13%;
-	max-width: 70%;
+	gap: 5%;
+	max-width: 90%;
 	justify-content: center;
 }
 
