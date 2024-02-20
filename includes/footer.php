@@ -2,8 +2,7 @@
     <div class="section-footer">
         <div class="footer-info">
             <p class="footer-info-desc">
-                Découvrez la tranquillité du village de Crișan au cœur du delta du Danube.
-                Notre pension offre une expérience unique d'écotourisme, de découverte ornithologique, de photographie animalière, et bien plus encore.
+                Notre pension offre une expérience unique d'écotourisme, de découverte ornithologique, de photographie animalière, et bien plus encore.<br><br>
                 Immergez-vous dans la nature préservée et contactez-nous pour une expérience inoubliable
             </p>
         </div>

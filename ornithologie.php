@@ -23,7 +23,36 @@
     <h2 class="body-heading">
       Nos différentes offres<br/><span> d'excursions ornithologiques</span>
     </h2>
-    <div class="meal-card-overview">
+      <div class="popup" id="popup1">
+          <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <h3>Description de l'Activité 1</h3>
+              <p>Ce contenu sera remplacé par une description détaillée de l'activité.</p>
+          </div>
+      </div>
+      <div class="popup" id="popup2">
+          <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <h3>Description de l'Activité 2</h3>
+              <p>Ce contenu sera remplacé par une description détaillée de l'activité.</p>
+          </div>
+      </div>
+      <div class="popup" id="popup3">
+          <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <h3>Description de l'Activité 3</h3>
+              <p>Ce contenu sera remplacé par une description détaillée de l'activité.</p>
+          </div>
+      </div>
+      <div class="popup" id="popup4">
+          <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <h3>Description de l'Activité 4</h3>
+              <p>Ce contenu sera remplacé par une description détaillée de l'activité.</p>
+          </div>
+      </div>
+
+      <div class="meal-card-overview">
       <div class="meal-card">
         <img src="images/ornitho4.jpg"/>
         <div class="meal-card-body">
@@ -55,6 +84,9 @@
             </li>
           </ul>
           <p class="meal-card-desc">Tarifs : 60€ par personne (min. 4 inscrits)</p>
+            <div class="offre-buttons">
+                <a href="javascript:void(0);" onclick="openPopup('popup1')">En savoir plus</a>
+            </div>
         </div>
       </div>
       <div class="meal-card">
@@ -73,6 +105,9 @@
             </li>
           </ul>
           <p class="meal-card-desc">Tarifs : A partir de 365€ par personne</p>
+            <div class="offre-buttons">
+                <a href="javascript:void(0);" onclick="openPopup('popup2')">En savoir plus</a>
+            </div>
         </div>
       </div>
       <div class="meal-card">
@@ -89,6 +124,9 @@
             </li>
           </ul>
           <p class="meal-card-desc">Tarifs : A partir de 435€ par personne</p>
+            <div class="offre-buttons">
+                <a href="javascript:void(0);" onclick="openPopup('popup3')">En savoir plus</a>
+            </div>
         </div>
       </div>
       <div class="meal-card">
@@ -116,24 +154,31 @@
             </li>
           </ul>
           <p class="meal-card-desc">Tarifs : A partir de 1100€ par personne en chambre double</p>
+            <div class="offre-buttons">
+                <a href="javascript:void(0);" onclick="openPopup('popup4')">En savoir plus</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   <section class="section-member-info">
-    <div class="carousel-container" dir="ltr">
-      <div class="carousel-slide"><img src="images/ornitho1.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho2.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho3.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho4.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho5.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho6.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho7.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho8.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho9.jpg"/></div>
-      <div class="carousel-slide"><img src="images/ornitho10.jpg"/></div>
-    </div>
+      <div class="carousel-container" dir="ltr">
+          <div class="carousel-slide" id="slide1">><img src="images/pension1.jpg"></div>
+          <div class="carousel-slide" id="slide2">><img src="images/pension9.jpg"></div>
+          <div class="carousel-slide" id="slide3">><img src="images/pension10.jpg"></div>
+          <div class="carousel-slide" id="slide4">><img src="images/pension2.jpg"></div>
+          <div class="carousel-slide" id="slide5">><img src="images/pension3.jpg"></div>
+          <div class="carousel-slide" id="slide6">><img src="images/pension4.jpg"></div>
+          <div class="carousel-slide" id="slide7">><img src="images/pension5.jpg"></div>
+          <div class="carousel-slide" id="slide8">><img src="images/pension6.jpg"></div>
+          <div class="carousel-slide" id="slide9">><img src="images/pension7.jpg"></div>
+      </div>
+      <div class="carousel-indicators">
+          <span class="indicator" class="active" data-slide-to="0"></span>
+          <span class="indicator" data-slide-to="1"></span>
+          <span class="indicator" data-slide-to="2"></span>
+      </div>
   </section>
 </main>
 <?php include'includes/footer.php'; ?>

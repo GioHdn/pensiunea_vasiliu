@@ -35,6 +35,25 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 });
+function openPopup(popupId) {
+	// Fermer toutes les popups ouvertes
+	closeAllPopups();
+
+	// Ouvrir la popup spécifique
+	document.getElementById(popupId).style.display = 'block';
+}
+
+function closeAllPopups() {
+	// Trouver toutes les popups et les fermer
+	var popups = document.querySelectorAll('.popup');
+	popups.forEach(function(popup) {
+		popup.style.display = 'none';
+	});
+}
+
+function closePopup() {
+	closeAllPopups();
+}
 
 const totalSlides = document.querySelectorAll('.carousel-slide').length;
 const slidesPerGroup = 3;
