@@ -130,6 +130,7 @@ small {
 }
 
 .half-width {
+	min-width: 80%;
 	border-radius: 10px;
 	border: 15px;
 	background-color: rgba(250,250,250);
