@@ -197,15 +197,15 @@ small {
 	padding: 0%;
 	border-radius: 0px 15px 15px 0px;
 	background-color: rgb(95 194 122 / 59%);
-	box-shadow: 10px 5px 10px #1b440e;
-	font-size: 40px;
+	box-shadow: 10px 5px 10px #2b3329;
+	font-size: 55px;
 	border-bottom: #2b7612;
 	color: white;
 }
 
 .content-page-title-h1 {
 	width: fit-content;
-	padding-top: 4%;
+	padding-top: 6%;
 }
 
 .half-width h3{
