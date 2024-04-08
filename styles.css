@@ -163,8 +163,8 @@ small {
 	font-size: 20px;
 }
 
-.half-width h1{
-	margin : 0px 15%;
+.half-width h1 {
+	margin: 0px 15%;
 	text-align: center;
 	color: rgb(42 105 76);
 	padding: 15px 0px;
@@ -193,12 +193,19 @@ small {
 
 .content-page-title h1 {
 	margin: 0;
-	line-height: 200px;
-	border-radius: 11px;
-	background-color: #0000004a;
-	font-size: 57px;
+	width: 130%;
+	padding: 0%;
+	border-radius: 0px 15px 15px 0px;
+	background-color: rgb(95 194 122 / 59%);
+	box-shadow: 10px 5px 10px #1b440e;
+	font-size: 40px;
 	border-bottom: #2b7612;
 	color: white;
+}
+
+.content-page-title-h1 {
+	width: fit-content;
+	padding-top: 4%;
 }
 
 .half-width h3{
@@ -267,7 +274,6 @@ small {
 	padding: 8px;
 	font-size: 24px;
 	font-weight: bold;
-	border: 5px solid rgb(61 169 119);
 }
 
 .popup-content p {
