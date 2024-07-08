@@ -1153,7 +1153,9 @@ input#phone, input#name, input#email, textarea#message {
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 600px){
-
+	.content-page-title h1 {
+		font-size: 55px;
+	}
 	.hero-group {
 		gap: 2%;
 		margin: 6rem 5%;
