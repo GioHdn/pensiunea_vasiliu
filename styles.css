@@ -1133,6 +1133,9 @@ input#phone, input#name, input#email, textarea#message {
 	.indicator{
 		display: none;
 	}
+	.popup-content{
+		min-width : 92%;
+	}
 	.popup-content h1 {
 		margin: 2% 10%;
 		font-size: 15px;
