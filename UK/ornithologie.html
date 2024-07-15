@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aniqa" />
+    <meta
+            name="description"
+            content="Lorem ipsum dolor sit amet"
+    />
+    <meta property="og:title" content="Petre Vasiliu" />
+    <meta
+            property="og:description"
+            content="Lorem ipsum dolor sit amet"
+    />
+    <meta
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link href="../style/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../style/queries.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Text:ital@0;1&display=swap"
+            rel="stylesheet"
+    />
+    <script
+            src="https://kit.fontawesome.com/50cde61edc.js"
+            crossorigin="anonymous"
+    ></script>
+</head>
+<body class="sticky">
+<header class="header">
+    <img
+            src="assets/logopensinea.png"
+            class="logo"
+            alt="logo for pensiunea"
+    />
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li>
+                <a href="index.html" class="nav-link">Accueil</a>
+            </li>
+            <li>
+                <a href="pension.html" class="nav-link">Pension</a>
+            </li>
+            <li>
+                <a href="excursion.html" class="nav-link">Excursions</a>
+            </li>
+            <li>
+                <a href="canoe.html" class="nav-link">Canoë</a>
+            </li>
+            <li>
+                <a href="ornithologie.html" class="nav-link">Ornithologie</a>
+            </li>
+            <li>
+                <a href="photographie.html" class="nav-link">Photographie</a>
+            </li>
+            <li>
+                <a href="decouverte.html" class="nav-link">Programme</a>
+            </li>
+        </ul>
+        <a href="contact.html" class="btn solid-btn mobile-order nav-link"
+        ><i class="fa-regular fa-calendar-check"></i> Contact</a
+        >
+    </nav>
+    <a href="contact.html" class="btn solid-btn desktop-order nav-link"
+    ><i class="fa-regular fa-calendar-check"></i>    Contact</a
+    >
+
+    <button class="mobile-nav-btn">
+				<span class="mobile-open">
+					<i class="fa-solid fa-bars mobile-open"></i>
+				</span>
+        <span class="mobile-close"
+        ><i class="fa-solid fa-xmark mobile-close"></i
+        ></span>
+    </button>
+</header>
+
+<main>
+  <section class="biography-sec">
+    <div class="half-width">
+      <div class ="content-page-title" style="background-image: url('../images/ornitho11.JPG')">
+          <div class ="content-page-title-h1"><h1>Ornithologie</h1></div>
+      </div>
+      <p>Notre village est particulièrement bien situé pour l’observation ornithologique. Il est en effet possible d’observer d’avril à septembre plus de 150 espèces d’oiseaux différentes. Chaque sortie est l’occasion de nouvelles observations.<br>
+        Autour de Crisan, le milieu naturel est particulièrement varié : grands lacs, enchevêtrement de canaux, grandes roselières, forêts de saules et de peupliers, eaux peu profondes, marres salées…<br>
+        <br>
+      Voici une liste non exhaustive de ce qu’il est possible d’observer :<br>
+        -	Sur le bord des berges : une multitude de Hérons crabiers et bihoreaux, des aigrettes, l’ibis falcinelle, une grande variété de limicoles comme le combattant varié ou le chevalier arlequin…, le martin pêcheur, la spatule...<br>
+        -	Sur les lacs : le pélican blanc et le pélican frisé, le grèbe jougris et le grèbe à cou noir, le fuligule nyroca, la guifette noire, la guifette leucoptère...<br>
+        -	Dans les roselières : la panure à moustache, la rousserolle turdoïde, la remiz penduline, le blongios nain, la marouette poussin...<br>
+        -	Dans les forêts : le faucon kobez et le faucon hobereau, le bondré apivore, le pic noir et le pic cendré, le loriot, le pygargue à queue blanche, le rollier...<br>
+        -	Dans les marres saumâtres : l’avocette, la glaréole à collier, le tadorne, le courlis cendré, le gravelot à collier interrompu, la sterne caspienne...<br>
+        <br>
+        Accompagnés par un guide ornithologue et francophone, vous partirez pour une escapade en bateau-barque d’environ   7 heures par jour et vous vous faufilerez vers les meilleurs sites.</p>
+    </div>
+  </section>
+  <section class="section-meals" id="meals">
+    <h1 class="subheading"></h1>
+    <h2 class="body-heading">
+      Nos différentes offres<br/><span> d'excursions ornithologiques</span>
+    </h2>
+      <div class="popup" id="popup1">
+          <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <h2>Excursion Ornithologique à la journée</h2>
+              <p>Venez découvrir avec Petre Vasiliu les richesses ornithologiques du Delta. Le départ se fait devant la pension, n’hésitez pas à vous inscrire !!</p>
+              <h1>Nos points forts</h1>
+                  <p>- Excursion au départ de Crisan<br>
+                  - Excursion en français, allemand et anglais<br>
+                  - Guide ornithologue professionnel et passionné<br>
+                  - Petit bateau qui permet d’accéder aux endroits les plus sauvages<br>
+                  - Observation de nombreuses espèces garantie</p>
+                  <h1>Tarifs</h1>
+                  <p>60 euros/pers (min. 4 inscrits)<br>
+                  Supplément de 50 lei par pers. (Charrette à Letea)<br>
+                  Départ assuré dès 4 inscrits</p>
+          </div>
+      </div>
+      <div class="popup" id="popup2">
+          <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <h2>Séjour ornithologique<br>(2 nuits, 2 excursions)</h2>
+              <p>Ce séjour s’adresse tant aux débutants qu’aux ornithologues chevronnés et permet l’observation de nombreuses espèces et l’approche de milieux différents</p>
+              <h1>Description</h1>
+              <p>Jour 1 : Départ en bateau taxi depuis le port de Tulcea (centre ou port Aval), logement et diner à la pension. Balade libre à pied ou en canoë</p>
+              <p>Jour 2 : Départ à la journée en bateau vers la zone nord. Diner et logement à la pension</p>
+              <p>Jour 3 : Départ à la journée vers la zone Sud. Retour en bateau taxi vers Tulcea en fin d’après midi</p>
+              <h1>Nos points forts</h1>
+              <p>- Prise en charge au départ de Tulcea<br>
+                  - Excursions en français, allemand et anglais<br>
+                  - Guide ornithologue professionnel et passionné<br>
+                  - Petit bateau qui permet d’accéder aux endroits les plus sauvages</p>
+              <h1>Tarifs</h1>
+              <p>A partir de 310 euros/pers sur la base d’une chambre double<br>
+                  N’hésitez pas à nous consulter !</p>
+          </div>
+      </div>
+      <div class="popup" id="popup3">
+          <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <h2>Séjour ornithologique<br>(3 nuits, 3 excursions)</h2>
+              <p>Ce séjour s’adresse tant aux débutants qu’aux ornithologues chevronnés et permet l’observation de nombreuses espèces et l’approche de milieux différents.</p>
+              <h1>Description</h1>
+              <p>Jour 1 : Départ en bateau taxi depuis le port de Tulcea (centre ou port Aval), logement et diner à la pension. Balade libre à pied ou en canoé</p>
+              <p>Jour 2 : Départ à la journée en bateau vers la zone nord. Diner et logement à la pension</p>
+              <p>Jour 3 : Départ à la journée vers la zone Sud. Retour en bateau taxi vers Tulcea en fin d’après midi</p>
+              <p>Jour 4 : Départ à la journée vers le Village de Letea. Retour en bateau taxi vers Tulcea en fin d’après midi</p>
+              <h1>Nos points forts</h1>
+              <p>- Prise en charge au départ de Tulcea<br>
+                  - Excursions en français, allemand et anglais<br>
+                  - Guide ornithologue professionnel et passionné<br>
+                  - Petit bateau qui permet d’accéder aux endroits les plus sauvages</p>
+              <h1>Tarifs</h1>
+              <p>A partir de 435 euros/pers sur la base d’une chambre double<br>
+                  N’hésitez pas à nous consulter !</p>
+          </div>
+      </div>
+      <div class="popup" id="popup4">
+          <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <h2>Séjour ornithologique d'une semaine</h2>
+              <p>Ce séjour s’adresse aux véritables passionnés d’ornithologie, c’est un programme complet qui allie les meilleurs sites du Delta, de la mer noire et de la Dobrogea.</p>
+              <h1>Description</h1>
+              <p>Jour 1 : Transfert Bucarest /Tulcea. Logement à Tulcea.</p>
+              <p>Jour 2 : Transfert à Crisan et première sortie ornitho en bateau. Logement et diner à la pension</p>
+              <p>Jour 3-4-5-6 : Sortie ornithologique avec guide local spécialisé, chaque journée sera consacrée à l’exploration d’une zone différente (Caraorman, Mila 23, Letea, Sulina avec la zonne cotiere, la zone du Sud-Ouest).</p>
+              <p>Jour 7 : Transfert à Tulcea et découverte de plusieurs sites dans la Dobrogea.  Logement à Tulcea</p>
+              <p>Jour 8 : Transfert à l’aéroport de Bucarest</p>
+              <h1>Nos points forts</h1>
+              <p> - Prise en charge depuis Bucarest<br>
+                  - Excursions en français, allemand et anglais<br>
+                  - Accès vers les meilleurs sites du delta, de la mer noire et de la Dobrogea<br>
+                  - Possibilité d’une extension de 2 ou 3 jours<br>
+                  - Petit bateau qui permet d’accéder aux endroits les plus sauvages</p>
+              <h1>Tarifs</h1>
+              <p>Veuillez nous consulter !</p>
+          </div>
+      </div>
+      <div class="meal-card-overview">
+      <div class="meal-card">
+        <img src="../images/ornitho4.jpg"/>
+        <div class="meal-card-body">
+          <p class="meal-card-heading">Excursion à la journée</p>
+          <p class="meal-card-desc">
+            Venez découvrir avec Petre Vasiliu les richesses ornithologiques du Delta
+          </p>
+          <ul class="meal-stats">
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Départ de Crisan</span>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Excursion en français, allemand et anglais</span>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Guide ornithologue professionnel</span>
+            </li>
+          </ul>
+            <div class="offre-buttons">
+                <a href="javascript:void(0);" onclick="openPopup('popup1')">En savoir plus</a>
+            </div>
+        </div>
+      </div>
+      <div class="meal-card">
+        <img src="../images/ornitho1.jpg"/>
+        <div class="meal-card-body">
+          <p class="meal-card-heading">Séjour 2 nuits, 2 excursions</p>
+            <p class="meal-card-desc">
+                Ce séjour s’adresse  aux ornithologues débutants ou confirmés, qui désirent observer un grand nombre d’espèce en peu de temps.
+            </p>
+          <ul class="meal-stats">
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Prise en charge depuis Tulcea</span>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Excursions en français, allemand et anglais</span>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Guide ornithologue professionnel</span>
+            </li>
+          </ul>
+            <div class="offre-buttons">
+                <a href="javascript:void(0);" onclick="openPopup('popup2')">En savoir plus</a>
+            </div>
+        </div>
+      </div>
+      <div class="meal-card">
+        <img src="../images/ornitho9.jpg"/>
+        <div class="meal-card-body">
+          <p class="meal-card-heading">Séjour 3 nuits, 3 excursions</p>
+          <p class="meal-card-desc">Ce séjour s'adresse tant aux débutants qu’aux ornithologues chevronnés et permet l’observation de nombreuses espèces et l’approche de milieux différents</p>
+          <ul class="meal-stats">
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Prise en charge depuis Tulcea</span>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Excursions en francais, allemand et anglais</span>
+            </li>
+              <li>
+                  <i class="fa-sharp fa-solid fa-angle-right"></i><span>Guide ornithologue professionnel</span>
+              </li>
+          </ul>
+            <div class="offre-buttons">
+                <a href="javascript:void(0);" onclick="openPopup('popup3')">En savoir plus</a>
+            </div>
+        </div>
+      </div>
+      <div class="meal-card">
+        <img src="../images/ornitho5.jpg"/>
+        <div class="meal-card-body">
+          <p class="meal-card-heading">Séjour d'une semaine</p>
+          <p class="meal-card-desc">Ce séjour s’adresse aux véritables passionnés d’ornithologie, c’est un programme complet qui allie les meilleurs sites du Delta, de la mer noire et de la Dobrogea.</p>
+          <ul class="meal-stats">
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Prise en charge depuis Bucarest</span>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Excursions en francais, allemand et anglais</span>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-angle-right"></i><span>Guide ornithologue professionnel</span>
+            </li>
+          </ul>
+            <div class="offre-buttons">
+                <a href="javascript:void(0);" onclick="openPopup('popup4')">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="section-member-info">
+        <div class="carousel-container" dir="ltr">
+            <div class="carousel-slide" id="slide1">><img src="../images/ornitho1.jpg"></div>
+            <div class="carousel-slide" id="slide2">><img src="../images/ornitho2.jpg"></div>
+            <div class="carousel-slide" id="slide3">><img src="../images/ornitho3.jpg"></div>
+            <div class="carousel-slide" id="slide4">><img src="../images/ornitho4.jpg"></div>
+            <div class="carousel-slide" id="slide5">><img src="../images/ornitho5.jpg"></div>
+            <div class="carousel-slide" id="slide6">><img src="../images/ornitho6.jpg"></div>
+            <div class="carousel-slide" id="slide7">><img src="../images/ornitho7.jpg"></div>
+            <div class="carousel-slide" id="slide8">><img src="../images/ornitho8.jpg"></div>
+            <div class="carousel-slide" id="slide9">><img src="../images/ornitho9.jpg"></div>
+        </div>
+        <div class="carousel-indicators">
+            <span class="indicator" class="active" data-slide-to="0"></span>
+            <span class="indicator" data-slide-to="1"></span>
+            <span class="indicator" data-slide-to="2"></span>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="section-footer">
+        <div class="footer-info">
+            <p class="footer-info-desc">
+                Notre pension offre une expérience unique d'écotourisme, de découverte ornithologique, de photographie animalière, et bien plus encore.<br><br>
+                Immergez-vous dans la nature préservée et contactez-nous pour une expérience inoubliable
+            </p>
+        </div>
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.6486890971705!2d29.390208676594256!3d45.1739634527565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b9c0dcaf28412b%3A0xdd498d7ebd2e5c95!2sPensiunea%20VASILIU!5e0!3m2!1sfr!2sfr!4v1707919527541!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <nav class="footer-nav">
+            <div class="contact-info">
+                <ul class="footer-links">
+                    <li><a
+                                href="mailto:hello@aniqa.io"
+                                target="_blank"
+                                rel="noreferrer"
+                                class="social-link"
+                                aria-label="email"
+                        >Contact</a></li>
+                    <li>
+                        Pension Vasiliu<br>
+                        422 strada principala
+                    </li>
+                    <li>CAROLINE VASILIU :<br>004 07 44 76 13 23</li>
+                    <li>PETRE VASILIU :<br>004 07 44 95 71 48<br>petrerot@yahoo.com</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</footer>
+<script defer src="../style/index.js"></script>
+</body>
+</html>
