@@ -91,6 +91,15 @@ small {
 	margin-right: 0.2rem;
 }
 
+nav.nav-lang {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav.nav-lang a {
+	width: 20%;
+}
+
 /* HEADER STICKY */
 .sticky .header {
 	position: fixed;
@@ -404,7 +413,7 @@ small {
 
 .btn {
 	border-radius: 50px;
-	padding: 1rem 4rem;
+	padding: 1rem 2rem;
 	font-size: 1.7rem;
 	margin: 0 1rem;
 	font-weight: 400;

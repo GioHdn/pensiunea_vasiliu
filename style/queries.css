@@ -317,7 +317,10 @@
 	}
 
 	.hero-buttons {
+		display: flex;
 		text-align: center;
+		flex-wrap: nowrap;
+		align-items: baseline;
 	}
 
 	.hero-customer-proof {
