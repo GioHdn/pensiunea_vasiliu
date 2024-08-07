@@ -116,7 +116,7 @@
 
 	.main-nav {
 		position: absolute;
-		background: rgb(153 255 190 / 83%);;
+		background: rgb(83 227 167 / 77%);
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
 		top: 0;
@@ -423,6 +423,7 @@
 @media only screen and (max-width: 35em) {
 	/* HERO */
 	.header {
+		gap: 2%;
 		padding: 0 2rem;
 	}
 
