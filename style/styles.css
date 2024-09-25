@@ -247,7 +247,9 @@ nav.nav-lang img{
 }
 
 .popup-content {
-	min-width: 60%;
+	max-width: 90vw; /* Limite la largeur à 90% de la fenêtre */
+	max-height: 90vh; /* Limite la hauteur à 90% de la fenêtre */
+	overflow-y: auto; /* Ajoute un défilement si le contenu dépasse */
 	font-size: 11px;
 	position: absolute;
 	top: 50%;
@@ -268,21 +270,21 @@ nav.nav-lang img{
 }
 
 .popup-content h1 {
-	margin: 0% 10% 4% 10%;
+	margin: 0% 10% 0% 10%;
 	text-align: center;
 	color: rgb(61 169 119);
-	padding: 8px 0px;
-	font-size: 21px;
+	padding: 2px 0px;
+	font-size: 17px;
 	font-weight: bold;
 	border-bottom: 3px solid rgb(61 169 119);
 }
 
 .popup-content h2 {
-	margin: 2% 10% 2% 10%;
+	margin: 0% 10%;
 	text-align: center;
 	color: rgb(61 169 119);
 	padding: 8px;
-	font-size: 24px;
+	font-size: 16px;
 	font-weight: bold;
 }
 
@@ -1207,7 +1209,7 @@ input#phone, input#name, input#email, textarea#message {
 		padding: 1rem 2rem;
 	}
 	.popup-content p {
-		font-size: 13px;
+		font-size: 11px;
 	}
 }
 @media only screen and (min-width: 600px){
